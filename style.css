@@ -1,0 +1,678 @@
+/*Se usa para ponerle margen y padding a todo el contenido inicialmente*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Es toda la parte que está dentro del nav que seria la parte de navegación */
+nav {
+  text-align: center;
+}
+
+/* Son las imagenes de los iconos puestos en la parte posterior derecha de la pag */
+.img-correo,
+.img-telefono,
+.img-ubicacion{
+  position: relative;
+  margin: 4.5px;
+  margin-top: 15px;
+  right: -33%;
+  width: 18px;
+}
+
+/* Es el texto de log in/register */
+h2 {
+  text-align: right;
+  padding-right: 30px;
+  margin-top: -25px;
+  font-size: 15px;
+  font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+/* Es el texto del titulo de Cleo nicci */
+h1 {
+  margin-top: 20px;
+}
+
+/* Es el menú horizontal desplegable inicial */
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+  font-size: 15px;
+  position: absolute;
+}
+
+/* Son las palabras del menú horizontal que son hijas directamente de menu horizontal desplegable inicial */
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: black;
+	text-decoration: none;
+  font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+/* Es la decoración de los li que son hijos directos de menú horizontal */
+.menu-horizontal > li>a:hover {
+  /* color: black;
+  font-weight: 600; */
+  cursor: pointer;
+}
+
+/* Es todo lo relacionado con el menú vertical */
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 150px;
+  font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+/* Es la decoración o funcion que se puede hacer con el hover para el menu horizontal y menu vertical */
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+
+/* ids que le puse a los dos li del menu vertical que sale de UNIQUE SUNGLASSES */
+#mujer, #hombre {
+  padding: 15px 30px 10px 65px;
+  margin-top: -15px;
+}
+
+/* Todo lo relacionado con los li que están dentro del menu vertical */
+.menu-vertical li{
+	display: block;
+	color: black;
+	text-decoration: none;
+	padding: 15px 30px 15px 0px;
+  margin-top: -17px;
+}
+
+/* Hace parte del icono dentro de un input */
+.input-wrapper {
+  padding-left: 50px;
+  padding-top: 55px;
+  width: 16%;
+  height: 100px;
+  margin-left: -35px;
+}
+
+/* Hace parte del icono dentro de un input */
+.input {
+  box-sizing: border-box;
+  color: #191919;
+  padding: 15px 15px 15px 35px;
+  width: 95%;
+  height: 5px;
+}
+
+/* Hace parte del icono dentro de un input */
+.input-icon {
+  color: #191919;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 30px;
+  top: 184px;
+  transform: translateY(-200%);
+}
+
+/* Es el menu creado despues del input de busqueda */
+.menu-horizontal-2 {
+  list-style: none;
+	display: flex;
+  font-size: 15px;
+  position: absolute;
+  font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  margin-left: 390px;
+  margin-top: -55px;
+}
+
+/* menú horizontal con solo las palabras */
+/* 22px = arriba-abajo todas las palabras / -10px mitad = arriba-abajo de solo las dos ultimas palabras
+/ 0px = No hace nada / -10px derecha esquina = izquierda-derecha de las dos ultimas palabras */
+#palabra {
+  margin: 22px -10px 0px -10px;
+}
+
+/* menú horizontal con solo los simbolos de asteriscos (*) */
+#simbolo {
+  margin: 15px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+/* Icono o imagen de un carrito de compras */
+#carro-compras {
+  width: 25px;
+  margin-right: -950px;
+  vertical-align: top;
+  margin-top: -48px;
+}
+
+/* Número 0 al lado del carro de compras */
+#numero {
+  vertical-align: top;
+  margin-top: -62px;
+  background-color: black;
+  color: white;
+  border-radius: 15px 15px 15px 15px;
+  width: 20px;
+  height: 18px;
+  margin-left: 1130px;
+}
+
+/* boton de 2022 new designs  */
+#boton1 {
+  width: 250px;
+  height: 50px;
+  border-width: 2px;
+  background-color: white;
+  font-weight: 600;
+  margin-right: 15%;
+  margin-top: 1%;
+}
+
+/* efectos decorativos para el boton de 2022 new designs */
+:hover #boton1:hover {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+/* imagen y boton cleo nicci de hombre con gafas */
+.imagen-boton1 {
+  padding: 15px;
+  margin-top: -20px;
+}
+
+/* imagen y boton cleo nicci de mujer con gafas */
+.imagen-boton2 {
+  margin-left: 30%;
+  margin-top: -50.9%;
+}
+
+/* imagen de cleo nicci hombre con gafas */
+#imagen1 {
+  margin: 20px;
+  margin-top: 1.5%;
+  width: 500px;
+}
+
+/* imagen de cleo nicci mujer con gafas */
+#imagen2 {
+  margin-left: 20.5%;  
+  margin-top: -2.5%;
+  width: 510px;
+}
+
+/* boton2 y boton3 juntos los purchase */
+#boton2,
+#boton3 {
+  width: 100px;
+  height: 30px;
+  vertical-align: top;
+  margin-top: 45%;
+  margin-left: -30%;
+}
+
+/* boton2 del purchase */
+#boton2 {
+  margin-left: -26.5%;
+  margin-top: 51%;
+  color: white;
+  background-color: black;
+  border-width: 1.5px;
+  height: 40px;
+  width: 150px;
+}
+
+/* boton3 del purchase */
+#boton3 {
+ margin-top: 66%;
+ margin-left: -35%;
+ color: white;
+ background-color: black;
+ border-width: 1.5px;
+ height: 40px;
+ width: 150px;
+}
+
+/* efectos del boton2 purchase */
+#boton2:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+/* efectos del boton3 purchase */
+#boton3:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+/* video sacado de youtube de cleo nicci */
+iframe {
+  margin-top: -8%;
+  width: 65%;
+  margin: 5%;
+  margin-left: 11%;
+  height: 500px;
+}
+
+/* imagen y boton cleo nicci de mujer con gafas de la mano izquierda */
+.imagen-boton3 {
+  margin-left: 25px;
+  margin-top: -1.5%;
+  width: 50px;
+}
+
+/* imagen y boton cleo nicci de mujer con gafas de la mano derecha */
+.imagen-boton4 {
+  margin: 20px;
+  width: 50px;
+  margin-left: 48.5%;
+  margin-top: -59.8%;
+}
+
+/* boton2 y boton3 juntos los purchase */
+#boton4,
+#boton5 {
+  width: 100px;
+  height: 30px;
+  vertical-align: top;
+  margin-top: 45%;
+  margin-left: -30%;
+}
+
+
+/* boton4 del purchase */
+#boton4 {
+  margin-left: 460%;
+  margin-top: 30%;
+  color: white;
+  background-color: black;
+  border-width: 1.5px;
+  height: 40px;
+  width: 150px;
+}
+
+/* boton5 del purchase */
+#boton5 {
+ margin-top: 27%;
+ margin-left: 460%;
+ color: white;
+ background-color: black;
+ border-width: 1.5px;
+ height: 40px;
+ width: 150px;
+}
+
+/* efectos del boton4 purchase */
+#boton4:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+/* efectos del boton5 purchase */
+#boton5:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+/* imagen de cleo nicci y los dos span sobre cleo nicci y 39k followers */
+.CLEO-NICCI {
+  float: left;
+  margin-left: 100px;
+  margin-top: 150px;
+}
+
+/* span del texto que dice cleo nicci */
+.cleo_nicci {
+  display: block;
+  margin-bottom: 20px;
+  margin-left: 150px;
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: -75px;
+}
+
+/* span del texto que dice 39k followers */
+.followers {
+  margin-left: 150px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgba(104, 103, 103, 0.982);
+  font-size: 20px;
+  vertical-align: top;
+}
+
+/* imagen que tiene como texto cleo nicci pequeño */
+.imagen-cleo_nicci {
+  width: 60px;
+  border-radius: 50%;
+  font-size: calc(60px/2);
+  height: 60px;
+  padding: 0px 0px;
+  margin-left: 60px;
+}
+
+/* imagen dentro de un boton */
+.boton-instagram {
+  margin-top: 100px;
+  float: right;
+  margin-right: 100px;
+  width: 500px;
+}
+
+/* imagen del icono de instagram */
+#instagram {
+ margin-right: 5px;
+ padding: 3px;
+ padding-top: -15px;
+ vertical-align: bottom;
+ padding-bottom: -15px;
+}
+
+/* boton que viene con el icono de instagram dentro con el id de follow */
+#follow {
+  width: 150px;
+  height: 40px;
+  vertical-align: top;
+  margin-top: 30px;
+  margin-left: 280px;
+  font-size: 16px;
+  padding: 5px -48px 15px 60px;
+  background-color: white;
+  border-width: 1.5px;
+}
+
+/* efecto hover sobre el texto del boton follow */
+#follow:hover {
+  color: rgb(91, 90, 90);
+  cursor: pointer;
+}
+
+/* boton con texto de Load More */
+#Load-More {
+  background-color: white;
+  border-width: 1.5px;
+  width: 150px;
+  height: 40px;
+  vertical-align: top;
+  margin-top: 200px;
+  margin-left: 280px;
+  font-size: 16px;
+  padding: 5px -48px 15px 60px;
+}
+
+/* efecto sobre el boton con texto Load More */
+#Load-More:hover {
+  color: rgb(91, 90, 90);
+  cursor: pointer;
+}
+
+/* tres imagenes de cleo nicci en orden izquierda la 1, centro la 2 y derecha la 3 */
+#image-cleo1,
+#image-cleo2,
+#image-cleo3 {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+}
+
+/* imagen del hombre negro mano izquierda con gafas parte de arriba */
+#image-cleo1 {
+  display: block;
+  float: left;
+  margin-left: -16%;
+  margin-top: 20%;
+}
+
+/* imagen de la mujer del medio con gafas parte de arriba */
+#image-cleo2 {
+  display: block;
+  float: left;
+  margin-left: 1%;
+  margin-top: 6.5%;
+}
+
+/* imagen del hombre de la mano derecha con gafas parte de arriba */
+#image-cleo3 {
+  display: block;
+  float: left;
+  margin-left: 1%;
+  margin-top: 6.5%;
+}
+
+/* tres imagenes de cleo nicci en orden izquierda la 4, centro la 5 y derecha la 6 */
+#image-cleo4,
+#image-cleo5,
+#image-cleo6 {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+}
+
+/* imagen del hombre de la mano izquierda con gafas parte de abajo */
+#image-cleo4 {
+  display: block;
+  float: left;
+  margin-left: -73.4%;
+  margin-top: 31.5%;
+}
+
+/* imagen de la mujer del centro con gafas parte de abajo */
+#image-cleo5 {
+  display: block;
+  float: left;
+  margin-left: 1%;
+  margin-top: 1.2%;
+  border-style: solid;
+  border-color: black;
+  border-width: 0.5px;
+}
+
+/* imagen del hombre de la mano derecha con gafas parte de abajo */
+#image-cleo6 {
+  display: block;
+  float: left;
+  margin-left: 63%;
+  margin-top: -23.72%;
+}
+
+/* boton de load more */
+#Load-More {
+  display: flex;
+  vertical-align: top;
+  margin-top: 75%;
+  margin-left: 44%;
+  padding: 10px 10px 15px 35px;
+  width: 140px;
+  height: 40px;
+}
+
+/* efectos para el boton load more */
+#Load-More:hover {
+  color: rgb(91, 90, 90);
+  cursor: pointer; 
+}
+
+/* son todos los componentes del pie de pagina */
+.pie-de-pagina {
+  display: block;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  flex-direction: row;
+  margin-top: 150px;
+}
+
+/* texto 1 del pie de pagina subscribe to our newsletter */
+#texto1 {
+  display: block;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 150px;
+  margin-left: 195px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* texto 2 del pie de pagina follow cleo nicci */
+#texto2 {
+  display: block;
+  flex-direction: row;
+  margin-left: 72.5%;
+  font-weight: 600;
+  margin-top: -22px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* input para el email del pie de pagina */
+#email {
+  width: 350px;
+  height: 55px;
+  margin-left: -350px;
+  margin-top: 5px;
+  padding: 15px 0px 10px 20px;
+  font-size: 15px;
+  border-width: 0px 0px 1.5px 0px;
+  border-color: black;
+}
+
+/* efectos para el input del email del pie de pagina */
+#email:focus {
+  border: 0.5px solid red;
+  outline: none;
+}
+
+/* texto 3 del pie de pagina first name */
+#texto3 {
+  float: left;
+  margin-left: 192px;
+  margin-top: 80px;
+  font-weight: 600;
+  font-size: 13px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* input para el input del primer nombre en el pie de pagina */
+#primer-nombre {
+  width: 220px;
+  height: 40px;
+  vertical-align: top;
+  margin-top: 110px;
+  margin-left: -340px;
+  padding: 15px 0px 15px 10px;
+  border: 0px;
+  background-color: rgb(237,237,238);
+}
+
+/* efecto sobre el input de primer nombre */
+#primer-nombre:hover {
+  background-color: rgb(156, 156, 156);
+  border: 2.5px solid rgb(89,82,81);
+}
+
+/* efectos al darle click en el input del email del pie de pagina */
+#primer-nombre:focus {
+  border: 0.5px solid red;
+  outline: none;
+}
+
+/* efecto sobre la letra del input de primer nombre */
+#primer-nombre[value=First-Name] {
+  color: white;
+}
+
+/* texto 1 del pie de pagina first name */
+#texto4 {
+  float: left;
+  margin-left: 190px;
+  margin-top: 80px;
+  font-weight: 600;
+  font-size: 13px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* input para el input del primer apellido del pie de pagina */
+#primer-apellido {
+  width: 220px;
+  height: 40px;
+  vertical-align: top;
+  margin-top: 110px;
+  margin-left: 40px;
+  padding: 15px 0px 15px 10px;
+  background-color: rgb(237,237,238);  
+  border: 0px;
+}
+
+/* efecto sobre el input de primer apellido */
+#primer-apellido[value=Last-Name] {
+  color: white;
+}
+
+/* efecto sobre el input de primer apellido */
+#primer-apellido:hover {
+  background-color: rgb(156, 156, 156);
+  border: 2.5px solid rgb(89,82,81);
+}
+
+/* efectos al dar click en el input del email del pie de pagina */
+#primer-apellido:focus {
+  border: 0.5px solid red;
+  outline: none;
+}
+
+/* boton de suscripcion */
+#subscripcion {
+  width: 180px;
+  height: 40px;
+  vertical-align: top;
+  margin-top: -40px;
+  margin-left: 720px;
+  letter-spacing: 2px;
+  font-size: 11px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #51594d;
+  font-weight: 800;
+  background-color: white;
+  border-style: solid;
+  border-color: rgb(89,82,81);
+}
+
+/* efecto hover del boton de subscripcion */
+#subscripcion:hover {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+/* enlace muerto del texto privacy information notice */
+a {
+  color: black;
+}
+
+/* texto escrito en la parte inferior del pie de pagina */
+p {
+  font-size: 12px;
+  font-family: avenir-lt-w01_35-light1475496,sans-serif;
+  margin-left: -130px;
+  margin-top: -320px;
+  padding: 320px;
+}
+
+/* icono de facebook */
+#facebook {
+  margin-left: 960px;
+  vertical-align: top;
+  margin-top: -510px;
+}
+
+/* icono de instagram 2 */
+#instagram2 {
+  margin-left: 960px;
+  vertical-align: top;
+  margin-top: -450px;
+}
